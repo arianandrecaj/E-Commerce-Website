@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Commerce Website</title>
+
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+    
+  <script type="module" src="https://unpkg.com/ionicons@6.0.0/dist/ionicons/ionicons.esm.js"></script>
+
+  <script nomodule src="https://unpkg.com/ionicons@6.0.0/dist/ionicons/ionicons.js"></script>
+  <script src="script.js"></script>
+</head>
+
+<body id="top">
+  <header class="header" data-header>
+    <div class="container">
+      <div class="overlay" data-overlay></div>
+      <a href="#" class="logo">
+        <img src="./images/logo.svg" width="160" height="50" alt="Website logo">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="index.html" class="navbar-link">Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="about.html" class="navbar-link">About</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="products.html" class="navbar-link">Products</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="faqs.html" class="navbar-link">Faqs</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="blog.html" class="navbar-link">Blog</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="contact.html" class="navbar-link">Contact</a>
+          </li>
+
+        </ul>
+
+        <ul class="nav-action-list">
+
+          <li>
+            <button class="nav-action-btn">
+              <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+              <span class="nav-action-text">Search</span>
+            </button>
+          </li>
+
+          <li>
+            <a href="#" class="nav-action-btn">
+              <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+              <span class="nav-action-text">Login / Register</span>
+            </a>
+          </li>
+
+          <li>
+            <button class="nav-action-btn">
+              <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+              <span class="nav-action-text">Wishlist</span>
+              <data class="nav-action-badge" value="5" aria-hidden="true">5</data>
+            </button>
+          </li>
+
+          <li>
+            <button class="nav-action-btn">
+              <ion-icon name="bag-outline" aria-hidden="true"></ion-icon>
+              <data class="nav-action-text" value="318.00">Basket: <strong>$318.00</strong></data>
+              <data class="nav-action-badge" value="4" aria-hidden="true">4</data>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container">
+        <h1>Frequently Asked Questions (FAQ)</h1>
+    
+        <ul>
+          <li class="faq-item">
+            <button onclick="toggleFAQ(this)">What payment methods do you accept?</button>
+            <div>
+              <p>We accept all major credit cards, PayPal, and other secure payment options like Apple Pay and Google Pay.</p>
+            </div>
+          </li>
+    <br>
+          <li class="faq-item">
+            <button onclick="toggleFAQ(this)">How do I track my order?</button>
+            <div>
+              <p>You will receive a tracking number via email once your order has shipped. You can use this to track your order on the courier's website.</p>
+            </div>
+          </li>
+    <br>
+          <li class="faq-item">
+            <button onclick="toggleFAQ(this)">Can I return or exchange my items?</button>
+            <div>
+              <p>Yes, we offer a 30-day return policy. Please refer to our return and exchange policy page for more details on how to initiate a return.</p>
+            </div>
+          </li>
+    <br>
+          <li class="faq-item">
+            <button onclick="toggleFAQ(this)">Do you ship internationally?</button>
+            <div>
+              <p>Yes, we do offer international shipping. Shipping charges will vary based on your location. Please check our shipping policy for more information.</p>
+            </div>
+          </li>
+    <br>
+          <li class="faq-item">
+            <button onclick="toggleFAQ(this)">How do I create an account?</button>
+            <div>
+              <p>Click on the "Sign Up" button at the top of the page and fill in your details. You’ll receive a confirmation email to complete the registration.</p>
+            </div>
+          </li>
+    <br>
+          <li class="faq-item">
+            <button onclick="toggleFAQ(this)">How do I change my shipping address?</button>
+            <div>
+              <p>You can change your shipping address during the checkout process or by logging into your account and updating your address details.</p>
+            </div>
+          </li>
+        </ul>
+        
+      </div>
+    
+      <script>
+        function toggleFAQ(button) {
+          const faqItem = button.parentElement;
+          faqItem.classList.toggle('active');
+        }
+      </script>
+    </body>
+    </html>
+    <br><br><br>
+    <footer class="footer">
+        <div class="footer-top section">
+          <div class="container">
+    
+            <div class="footer-link-box">
+    
+              <ul class="footer-list">
+    
+                <li>
+                  <p class="footer-list-title">Contact Us</p>
+                </li>
+    
+                <li>
+                  <address class="footer-link">
+                    <ion-icon name="location"></ion-icon>
+    
+                    <span class="footer-link-text">
+                      Rruga B, 27, Prishtina, Kosova
+                    </span>
+                  </address>
+                </li>
+    
+                <li>
+                  <a href="tel:+557343673257" class="footer-link">
+                    <ion-icon name="call"></ion-icon>
+    
+                    <span class="footer-link-text">+38344556676</span>
+                  </a>
+                </li>
+    
+                <li>
+                  <a href="mailto:website@help.com" class="footer-link">
+                    <ion-icon name="mail"></ion-icon>
+    
+                    <span class="footer-link-text">website@help.com</span>
+                  </a>
+                </li>
+    
+              </ul>
+    
+              <ul class="footer-list">
+    
+                <li>
+                  <p class="footer-list-title">My Account</p>
+                </li>
+    
+                <li>
+                  <a href="#" class="footer-link">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+    
+                    <span class="footer-link-text">My Account</span>
+                  </a>
+                </li>
+    
+                <li>
+                  <a href="#" class="footer-link">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+    
+                    <span class="footer-link-text">View Cart</span>
+                  </a>
+                </li>
+    
+                <li>
+                  <a href="#" class="footer-link">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+    
+                    <span class="footer-link-text">Wishlist</span>
+                  </a>
+                </li>
+    
+                <li>
+                  <a href="#" class="footer-link">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+    
+                    <span class="footer-link-text">Compare</span>
+                  </a>
+                </li>
+    
+                <li>
+                  <a href="#" class="footer-link">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+    
+                    <span class="footer-link-text">New Products</span>
+                  </a>
+                </li>
+    
+              </ul>
+    
+              <div class="footer-list">
+    
+                <p class="footer-list-title">Opening Time</p>
+    
+                <table class="footer-table">
+                  <tbody>
+    
+                    <tr class="table-row">
+                      <th class="table-head" scope="row">Mon - Tue:</th>
+    
+                      <td class="table-data">8AM - 10PM</td>
+                    </tr>
+    
+                    <tr class="table-row">
+                      <th class="table-head" scope="row">Wed:</th>
+    
+                      <td class="table-data">8AM - 7PM</td>
+                    </tr>
+    
+                    <tr class="table-row">
+                      <th class="table-head" scope="row">Fri:</th>
+    
+                      <td class="table-data">7AM - 12PM</td>
+                    </tr>
+    
+                    <tr class="table-row">
+                      <th class="table-head" scope="row">Sat:</th>
+    
+                      <td class="table-data">9AM - 8PM</td>
+                    </tr>
+    
+                    <tr class="table-row">
+                      <th class="table-head" scope="row">Sun:</th>
+    
+                      <td class="table-data">Closed</td>
+                    </tr>
+    
+                  </tbody>
+                </table>
+    
+              </div>
+    
+              <div class="footer-list">
+    
+                <p class="footer-list-title">Newsletter</p>
+    
+                <p class="newsletter-text">
+                  Authoritatively morph 24/7 potentialities with error-free partnerships.
+                </p>
+    
+                <form action="" class="newsletter-form">
+                  <input type="email" name="email" required placeholder="Email Address" class="newsletter-input">
+    
+                  <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
