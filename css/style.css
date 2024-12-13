@@ -660,11 +660,6 @@ a.footer-link:is(:hover, :focus) { color: var(--bittersweet); }
   font-size: 14px;
   color: #555;
 }
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-}
-
 
 .container {
 padding: 20px;
