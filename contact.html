@@ -8,16 +8,16 @@
   <title>E-Commerce Website</title>
 
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/form.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
     rel="stylesheet">
-</head><script  nomodule src="https://unpkg.com/ionicons@6.0.0/dist/ionicons/ionicons.js"></script>
-  
-  <script src="script.js"></script>
+    
   <script type="module" src="https://unpkg.com/ionicons@6.0.0/dist/ionicons/ionicons.esm.js"></script>
- 
+  <script nomodule src="https://unpkg.com/ionicons@6.0.0/dist/ionicons/ionicons.js"></script>
+  <script src="script.js"></script>
 </head>
 
 <body id="top">
@@ -30,86 +30,59 @@
 
       <nav class="navbar" data-navbar>
         <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <a href="index.html" class="navbar-link">Home</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="about.html" class="navbar-link">About</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="products.html" class="navbar-link">Products</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="faqs.html" class="navbar-link">Faqs</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="blog.html" class="navbar-link">Blog</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="contact.html" class="navbar-link">Contact</a>
-          </li>
-          <li class="navbar-item">
-            <a href="reviews.html" class="navbar-link">Review</a>
-          </li>
+          <li class="navbar-item"><a href="index.html" class="navbar-link">Home</a></li>
+          <li class="navbar-item"><a href="about.html" class="navbar-link">About</a></li>
+          <li class="navbar-item"><a href="products.html" class="navbar-link">Products</a></li>
+          <li class="navbar-item"><a href="faqs.html" class="navbar-link">Faqs</a></li>
+          <li class="navbar-item"><a href="blog.html" class="navbar-link">Blog</a></li>
+          <li class="navbar-item"><a href="contact.html" class="navbar-link">Contact</a></li>
+          <li class="navbar-item"><a href="reviews.html" class="navbar-link">Review</a></li>
         </ul>
 
         <ul class="nav-action-list">
-
-          <li>
-            <button class="nav-action-btn">
-              <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
-              <span class="nav-action-text">Search</span>
-            </button>
-          </li>
-
-          <li>
-            <a href="login.html" class="nav-action-btn">
-              <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
-              <span class="nav-action-text">Login / Register</span>
-            </a>
-          </li>
-
-          <li>
-            <button class="nav-action-btn">
-              <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
-              <span class="nav-action-text">Wishlist</span>
-              <data class="nav-action-badge" value="5" aria-hidden="true">5</data>
-            </button>
-          </li>
-
-          <li>
-            <button class="nav-action-btn">
-              <ion-icon name="bag-outline" aria-hidden="true"></ion-icon>
-              <data class="nav-action-text" value="318.00">Basket: <strong>$318.00</strong></data>
-              <data class="nav-action-badge" value="4" aria-hidden="true">4</data>
-            </button>
-          </li>
+          <li><button class="nav-action-btn"><ion-icon name="search-outline" aria-hidden="true"></ion-icon><span class="nav-action-text">Search</span></button></li>
+          <li><a href="login.html" class="nav-action-btn"><ion-icon name="person-outline" aria-hidden="true"></ion-icon><span class="nav-action-text">Login / Register</span></a></li>
+          <li><button class="nav-action-btn"><ion-icon name="heart-outline" aria-hidden="true"></ion-icon><span class="nav-action-text">Wishlist</span><data class="nav-action-badge" value="5" aria-hidden="true">5</data></button></li>
+          <li><button class="nav-action-btn"><ion-icon name="bag-outline" aria-hidden="true"></ion-icon><data class="nav-action-text" value="318.00">Basket: <strong>$318.00</strong></data><data class="nav-action-badge" value="4" aria-hidden="true">4</data></button></li>
         </ul>
       </nav>
     </div>
   </header>
-  <div class="container">
-    <h2 style="text-align: center; margin-top: 40px;">Our Blog</h2>
-    <div class="blog-posts" style="display: flex; justify-content: center; flex-wrap: wrap;">
-        <div class="blog-post" style="width: 80%; max-width: 800px; margin: 20px; text-align: center;">
-            <img src="./images/blog1.png" alt="Fashion Trends" style="width: 100%; height: auto;">
-            <br>
-            <h3>Top Fashion Trends for 2024</h3>
-            <br>
-            <p>Discover the latest fashion trends that will take your wardrobe to the next level. From oversized blazers to pastel shades, these are the must-have pieces for the new year.</p>
-            <p>Whether you're looking to refresh your entire closet or just want to add a few statement pieces, this guide will help you stay ahead of the curve. Get ready to embrace bold prints, sleek silhouettes, and fresh color palettes. Don't miss out on these essential fashion updates for 2024!</p>
 
+  <br><br>    
+  <main>
+    <div class="form-container">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your full name">
+          <div class="error" id="nameError"></div>
         </div>
-  </div>
-  </div>
-<br><br>
-<footer class="footer">
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email address">
+          <div class="error" id="emailError"></div>
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="Enter subject of your message">
+          <div class="error" id="subjectError"></div>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Write your message here" rows="5"></textarea>
+          <div class="error" id="messageError"></div>
+        </div>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </main>
+  <footer class="footer">
     <div class="footer-top section">
       <div class="container">
 
@@ -266,3 +239,54 @@
   </a>
 </body>
 </html>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      
+      document.getElementById('nameError').textContent = '';
+      document.getElementById('emailError').textContent = '';
+      document.getElementById('subjectError').textContent = '';
+      document.getElementById('messageError').textContent = '';
+
+      let isValid = true;
+
+      
+      const name = document.getElementById('name').value;
+      if (name.trim() === '') {
+        document.getElementById('nameError').textContent = 'Name is required.';
+        isValid = false;
+      }
+
+      
+      const email = document.getElementById('email').value;
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailPattern.test(email)) {
+        document.getElementById('emailError').textContent = 'Please enter a valid email address.';
+        isValid = false;
+      }
+
+     
+      const subject = document.getElementById('subject').value;
+      if (subject.trim() === '') {
+        document.getElementById('subjectError').textContent = 'Subject is required.';
+        isValid = false;
+      }
+
+      
+      const message = document.getElementById('message').value;
+      if (message.trim() === '') {
+        document.getElementById('messageError').textContent = 'Message cannot be empty.';
+        isValid = false;
+      }
+
+      if (isValid) {
+        
+        alert('Message sent successfully!');
+      }
+    });
+  </script>
+
+
+
