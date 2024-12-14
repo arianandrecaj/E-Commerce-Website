@@ -8,6 +8,7 @@
   <title>E-Commerce Website</title>
 
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/form.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -93,43 +94,55 @@
       </nav>
     </div>
   </header>
+ 
+</head>
 
-  <div class="container">
-    <h2 style="text-align: center; margin-top: 40px;">About Us</h2>
-    <div class="about-posts" style="display: flex; justify-content: center; flex-wrap: wrap;">
-        <div class="about-post" style="width: 80%; max-width: 800px; margin: 20px; text-align: center;">
-            <img src="./images/staff.jpg" alt="Who we are" style="width: 100%; height: auto;">
-            <br>
-            <h2>Who We Are</h2>
-            <br>
-        <p>
-         At Trendy Threads, we believe that clothing is more than just fabric—it's a statement, a lifestyle, and a way to express individuality. Founded with the vision of offering style, comfort, and affordability, we’re dedicated to bringing the latest trends directly to your wardrobe.
-        </p>
-        <br>
-        <h2>Our Mission</h2>
-        <br>
-        <p>
-            Our mission is to inspire confidence through fashion. We strive to make modern trends accessible, versatile, and timeless—offering clothing that blends style, functionality, and quality for every occasion.
-        </p>
-        <br>
-        <h2>What We Offer</h2>
-        <br>
-        <p>
-            We offer a curated selection of clothing and accessories that cater to every style preference, from casual everyday wear to chic evening ensembles. Whether you're looking for statement pieces, seasonal essentials, or trend-forward classics, Trendy Threads has you covered.
-        </p>
-        <br>
-        <h2>Why Shop With Us?</h2>
-        <br>
-        <p>
-            Quality & Style: Our products are designed with care and attention to detail.
-            Affordable Prices: Trendy fashion should never break the bank.
-            Fast Shipping: We ensure your favorite pieces are delivered to your doorstep quickly and safely.
-            Customer-First Philosophy: Your satisfaction is our top priority. We make returns and exchanges hassle-free.
-        </p>
-        </div>
+<main>
+  <div class="form-container">
+    <h1>Customer Feedback / Review</h1>
+    <form id="reviewForm">
+        <div class="form-group">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+      </div>
+
+      <div class="form-group">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+
+      <div class="form-group">
+      <label for="product">Product Purchased</label>
+      <select id="product" name="product" required>
+        <option value="">Select a Product</option>
+        <option value="t-shirt">Long beige dress</option>
+        <option value="jeans">Beige top</option>
+        <option value="jacket">Leather trousers</option>
+        <option value="dress">Mini bag</option>
+      </select>
+      </div>
+
+      <div class="form-group">
+      <label for="feedback">Your Feedback / Review</label>
+      <textarea id="feedback" name="feedback" rows="4" placeholder="Write your feedback here..." required></textarea>
+      </div>
+
+      <div class="form-group">
+      <label for="rating">Rating</label>
+      <select id="rating" name="rating" required>
+        <option value="">Select Rating</option>
+        <option value="1">1 - Very Poor</option>
+        <option value="2">2 - Poor</option>
+        <option value="3">3 - Average</option>
+        <option value="4">4 - Good</option>
+        <option value="5">5 - Excellent</option>
+      </select>
+      </div>
+
+      <button type="submit" class="btn">Submit Feedback</button>
+    </form>
   </div>
-  </div>
-<br><br>
+</main>
   <footer class="footer">
     <div class="footer-top section">
       <div class="container">
@@ -285,5 +298,5 @@
   <a href="#top" class="go-top-btn" data-go-top>
     <ion-icon name="arrow-up-outline"></ion-icon>
   </a>
-
-</html>
+  </body>
+  </html>
